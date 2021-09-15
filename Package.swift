@@ -51,7 +51,7 @@ let package = Package(
             targets: ["AsyncDisplayKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/pinterest/PINRemoteImage.git", from: "3.0.3")
+        .package(url: "https://github.com/annomusa/PINRemoteImage.git", from: "3.0.3-non-webp")
     ],
     targets: [
         .target(
