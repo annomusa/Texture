@@ -108,8 +108,9 @@ func privateHeadersAndImpl(sources: String, publicHeaders: [String]) -> [String]
         
         // collect sources
         if fullPath.hasSuffix(".h") ||
-           fullPath.hasSuffix(".m") ||
-           fullPath.hasSuffix(".mm") {
+            fullPath.hasSuffix(".m") ||
+            fullPath.hasSuffix(".mm") ||
+            fullPath.hasSuffix(".modulemap") {
             // Collect path
             privateHeadersAndSources.append(fullPath)
         }
